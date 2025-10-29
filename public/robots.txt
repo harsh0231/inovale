@@ -1,14 +1,13 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+# Allow all crawlers
 User-agent: *
 Allow: /
+
+# Disallow admin and private areas (if any)
+# Disallow: /admin
+# Disallow: /private
+
+# Sitemaps
+Sitemap: https://inovale.com/sitemap.xml
+
+# Crawl delay (optional - adjust as needed)
+Crawl-delay: 1

@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "sonner";
+import { updateSEOMeta, PAGE_SEO_CONFIG } from "@/utils/seo";
 
 const Contact = () => {
+  useEffect(() => {
+    updateSEOMeta(PAGE_SEO_CONFIG.contact);
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",

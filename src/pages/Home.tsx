@@ -1,11 +1,16 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Brain, Cpu, Users, Award, ArrowRight } from "lucide-react";
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-neural-network.jpg";
+import { updateSEOMeta, PAGE_SEO_CONFIG } from "@/utils/seo";
 
 const Home = () => {
+  useEffect(() => {
+    updateSEOMeta(PAGE_SEO_CONFIG.home);
+  }, []);
   return (
     <>
       {/* Hero Section */}

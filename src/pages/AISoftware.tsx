@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Eye, Brain, Zap, Bot, BarChart, Cloud } from "lucide-react";
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import aiHeroImage from "@/assets/ai-hero-animation.jpg";
+import { updateSEOMeta, PAGE_SEO_CONFIG } from "@/utils/seo";
 
 const AISoftware = () => {
+  useEffect(() => {
+    updateSEOMeta(PAGE_SEO_CONFIG.aiSoftware);
+  }, []);
   return (
     <>
       {/* Hero Section */}

@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Target, Eye } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import logoImage from "@/assets/logo-inovale.jpg";
 import aboutHeroBg from "@/assets/about-hero-bg.jpg";
+import { updateSEOMeta, PAGE_SEO_CONFIG } from "@/utils/seo";
 
 const About = () => {
+  useEffect(() => {
+    updateSEOMeta(PAGE_SEO_CONFIG.about);
+  }, []);
   return (
     <div className="pt-20">
       {/* Hero Section */}

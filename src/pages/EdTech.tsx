@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Brain, Lightbulb, Users, School, BookOpen, Award } from "lucide-react";
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import heroImage from "@/assets/hero-neural-network.jpg";
+import { updateSEOMeta, PAGE_SEO_CONFIG } from "@/utils/seo";
 
 const EdTech = () => {
+  useEffect(() => {
+    updateSEOMeta(PAGE_SEO_CONFIG.edtech);
+  }, []);
   return (
     <>
       {/* Hero Section */}

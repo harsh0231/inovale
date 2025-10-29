@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import aiRoboticsLab from "@/assets/project-ai-robotics-lab.jpg";
@@ -8,11 +8,16 @@ import documentAutomation from "@/assets/project-document-automation.jpg";
 import instituteAutomation from "@/assets/project-institute-automation.jpg";
 import analyticsDashboard from "@/assets/project-analytics-dashboard.jpg";
 import logoImage from "@/assets/logo-inovale.jpg";
+import { updateSEOMeta, PAGE_SEO_CONFIG } from "@/utils/seo";
 import projectsHeroBg from "@/assets/projects-hero-bg.jpg";
 
 type ProjectCategory = "all" | "edtech" | "ai";
 
 const Projects = () => {
+  useEffect(() => {
+    updateSEOMeta(PAGE_SEO_CONFIG.projects);
+  }, []);
+
   const [selectedCategory, setSelectedCategory] = useState<ProjectCategory>("all");
 
   const projects = [
