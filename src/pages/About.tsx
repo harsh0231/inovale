@@ -160,13 +160,14 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="font-exo text-4xl font-bold text-center mb-12">Our Leadership Team</h2>
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Amit Sinha - Managing Director */}
             <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300">
-              <div className="aspect-video overflow-hidden bg-secondary">
+              <div className="h-80 overflow-hidden bg-secondary flex items-center justify-center">
                 <img
                   src={amitSinhaImage}
                   alt="Amit Sinha - Managing Director"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <CardHeader>
@@ -201,6 +202,100 @@ const About = () => {
                   </div>
                   <p className="text-sm text-muted-foreground italic pt-4 border-t border-border">
                     "Innovation thrives when vision meets execution. Our mission is to empower the next generation through technology while driving measurable business outcomes."
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Harsh Raj - Senior AI Architect */}
+            <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300">
+              <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-8 h-32 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 rounded-full bg-primary/30 flex items-center justify-center mx-auto mb-4">
+                    <span className="text-3xl">🤖</span>
+                  </div>
+                  <p className="text-primary font-semibold text-sm">AI Architecture & Innovation</p>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="font-exo text-2xl">Harsh Raj</CardTitle>
+                <p className="text-primary font-semibold mt-2">Senior AI Architect</p>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Harsh Raj is a visionary Senior AI Architect with deep expertise in cutting-edge AI technologies. With extensive experience in Large Language Models and Agentic AI systems, Harsh drives the technical excellence and innovation backbone of INOVALE's AI solutions. His ability to design and implement scalable, production-ready AI systems has been instrumental in delivering enterprise-grade solutions.
+                  </p>
+                  <div>
+                    <h4 className="font-exo font-bold text-primary mb-2">Core Competencies:</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Large Language Models (LLMs):</strong> Design and implementation of state-of-the-art generative AI systems</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Agentic AI:</strong> Building autonomous AI agents and multi-agent systems</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Machine Learning Algorithms:</strong> Advanced ML model development and optimization</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Scalable Pipelines:</strong> Designing and implementing production ML pipelines and data architectures</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <p className="text-sm text-muted-foreground italic pt-4 border-t border-border">
+                    "The future belongs to intelligent systems. We're not just building AI; we're architecting the intelligence that will transform industries."
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Ankit Pratap Singh - Full Stack Developer */}
+            <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300">
+              <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-8 h-32 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 rounded-full bg-primary/30 flex items-center justify-center mx-auto mb-4">
+                    <span className="text-3xl">⚙️</span>
+                  </div>
+                  <p className="text-primary font-semibold text-sm">Full Stack Development & Architecture</p>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="font-exo text-2xl">Ankit Pratap Singh</CardTitle>
+                <p className="text-primary font-semibold mt-2">Full Stack Java Developer</p>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Ankit Pratap Singh is a highly skilled Full Stack Java Developer with a proven expertise in building robust, scalable enterprise applications. With deep knowledge of modern development frameworks and cloud-native architectures, Ankit ensures that INOVALE's software solutions are built on solid technical foundations, delivering reliability and performance at scale.
+                  </p>
+                  <div>
+                    <h4 className="font-exo font-bold text-primary mb-2">Technical Expertise:</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Java Ecosystem:</strong> Spring Boot, Microservices, RESTful APIs, and enterprise application development</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Frontend Technologies:</strong> Modern web frameworks and responsive UI development</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Database Design:</strong> SQL optimization, schema design, and data persistence layers</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Cloud & DevOps:</strong> Deployment automation, containerization, and infrastructure management</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <p className="text-sm text-muted-foreground italic pt-4 border-t border-border">
+                    "Great software is built on solid foundations. We focus on writing clean, maintainable code that scales with your business needs."
                   </p>
                 </div>
               </CardContent>
