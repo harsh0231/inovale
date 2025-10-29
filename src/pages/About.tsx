@@ -1,14 +1,28 @@
-import { Target, Eye, Users } from "lucide-react";
+import { Target, Eye } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import logoImage from "@/assets/logo-inovale.jpg";
+import aboutHeroBg from "@/assets/about-hero-bg.jpg";
 
 const About = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-card">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="font-exo text-5xl md:text-6xl font-bold mb-6 uppercase">About INOVALE</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+      <section className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${aboutHeroBg})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="mb-8 flex justify-center">
+            <img 
+              src={logoImage} 
+              alt="INOVALE Logo" 
+              className="h-24 w-24 rounded-full object-cover animate-float shadow-2xl shadow-golden-glow/50 ring-4 ring-golden-glow/30"
+            />
+          </div>
+          <h1 className="font-exo text-5xl md:text-6xl font-bold mb-6 uppercase animate-fade-in">About INOVALE</h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
             Pioneering the future of technology education and intelligent business solutions.
           </p>
         </div>
@@ -84,37 +98,6 @@ const About = () => {
                 businesses, we're not just building solutions—we're shaping the future.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Meet the Team */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-            <h2 className="font-exo text-4xl font-bold mb-4">Meet Our Team</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              A diverse group of technologists, educators, and innovators dedicated to transforming
-              education and business through AI.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[1, 2, 3].map((member) => (
-              <Card key={member} className="bg-card border-border text-center">
-                <CardHeader>
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-golden-glow mx-auto mb-4" />
-                  <CardTitle className="font-exo text-xl">Team Member {member}</CardTitle>
-                  <p className="text-sm text-muted-foreground">Position Title</p>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Brief bio about the team member's background, expertise, and role at INOVALE.
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
