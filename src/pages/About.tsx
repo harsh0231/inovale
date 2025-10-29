@@ -3,6 +3,7 @@ import { Target, Eye } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import logoImage from "@/assets/logo-inovale.jpg";
 import aboutHeroBg from "@/assets/about-hero-bg.jpg";
+import amitSinhaImage from "@/assets/amit.jpg";
 import { updateSEOMeta, PAGE_SEO_CONFIG } from "@/utils/seo";
 
 const About = () => {
@@ -151,6 +152,59 @@ const About = () => {
                 Creating meaningful change in education and business.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Team */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="font-exo text-4xl font-bold text-center mb-12">Our Leadership Team</h2>
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300">
+              <div className="aspect-video overflow-hidden bg-secondary">
+                <img
+                  src={amitSinhaImage}
+                  alt="Amit Sinha - Managing Director"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="font-exo text-2xl">Amit Sinha</CardTitle>
+                <p className="text-primary font-semibold mt-2">Managing Director</p>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Amit Sinha brings extensive expertise in business development, finance, and strategic marketing to INOVALE. With a proven track record of driving organizational growth and market expansion, Amit leads the company's vision to become India's premier technology solutions provider.
+                  </p>
+                  <div>
+                    <h4 className="font-exo font-bold text-primary mb-2">Areas of Expertise:</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Business Development:</strong> Driving partnerships with educational institutions and enterprises</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Financial Strategy:</strong> Optimizing resources and ensuring sustainable growth</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Strategic Marketing:</strong> Building brand presence and market positioning</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary mt-1">•</span>
+                        <span><strong>Organizational Leadership:</strong> Guiding teams towards excellence and innovation</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <p className="text-sm text-muted-foreground italic pt-4 border-t border-border">
+                    "Innovation thrives when vision meets execution. Our mission is to empower the next generation through technology while driving measurable business outcomes."
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
