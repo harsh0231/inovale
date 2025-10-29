@@ -209,13 +209,10 @@ const About = () => {
 
             {/* Harsh Raj - Senior AI Architect */}
             <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300 flex flex-col">
-              <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-6 h-32 flex items-center justify-center">
-                <h3 className="font-exo text-2xl font-bold text-center text-primary">Harsh Raj</h3>
+              <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-6 h-40 flex flex-col items-center justify-center">
+                <h3 className="font-exo text-2xl font-bold text-center text-primary mb-2">Harsh Raj</h3>
+                <p className="text-primary font-semibold text-sm">Senior AI Architect</p>
               </div>
-              <CardHeader className="pb-2">
-                <CardTitle className="font-exo text-lg">Harsh Raj</CardTitle>
-                <p className="text-primary font-semibold mt-1 text-sm">Senior AI Architect</p>
-              </CardHeader>
               <CardContent className="flex-1 overflow-y-auto">
                 <div className="space-y-2">
                   <p className="text-muted-foreground leading-relaxed text-xs">
@@ -251,13 +248,10 @@ const About = () => {
 
             {/* Ankit Pratap Singh - Full Stack Developer */}
             <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300 flex flex-col">
-              <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-6 h-32 flex items-center justify-center">
-                <h3 className="font-exo text-2xl font-bold text-center text-primary">Ankit Pratap Singh</h3>
+              <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-6 h-40 flex flex-col items-center justify-center">
+                <h3 className="font-exo text-2xl font-bold text-center text-primary mb-2">Ankit Pratap Singh</h3>
+                <p className="text-primary font-semibold text-sm">Full Stack Java Developer</p>
               </div>
-              <CardHeader className="pb-2">
-                <CardTitle className="font-exo text-lg">Ankit Pratap Singh</CardTitle>
-                <p className="text-primary font-semibold mt-1 text-sm">Full Stack Java Developer</p>
-              </CardHeader>
               <CardContent className="flex-1 overflow-y-auto">
                 <div className="space-y-2">
                   <p className="text-muted-foreground leading-relaxed text-xs">
