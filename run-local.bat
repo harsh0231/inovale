@@ -3,6 +3,8 @@ REM ============================================
 REM INOVALE Website - Local Development Server
 REM ============================================
 
+setlocal enabledelayedexpansion
+
 echo.
 echo ============================================
 echo INOVALE - Local Development Server
@@ -14,6 +16,7 @@ node --version >nul 2>&1
 if errorlevel 1 (
     echo ERROR: Node.js is not installed!
     echo Please download and install Node.js from https://nodejs.org/
+    echo.
     pause
     exit /b 1
 )
@@ -23,11 +26,15 @@ npm --version >nul 2>&1
 if errorlevel 1 (
     echo ERROR: npm is not installed!
     echo Please download and install Node.js from https://nodejs.org/
+    echo.
     pause
     exit /b 1
 )
 
-echo Node.js and npm are installed.
+echo Node.js version:
+node --version
+echo npm version:
+npm --version
 echo.
 
 REM Check if node_modules exists
@@ -37,10 +44,14 @@ if not exist "node_modules" (
     echo.
     call npm install
     if errorlevel 1 (
+        echo.
         echo ERROR: Failed to install dependencies!
+        echo Please check your internet connection and try again.
+        echo.
         pause
         exit /b 1
     )
+    echo.
     echo Dependencies installed successfully!
     echo.
 ) else (
@@ -49,16 +60,28 @@ if not exist "node_modules" (
 )
 
 REM Start the development server
-echo Starting development server...
-echo.
 echo ============================================
+echo Starting development server...
+echo ============================================
+echo.
 echo The website will be available at:
 echo   http://localhost:8080
-echo ============================================
 echo.
+echo Opening browser in 3 seconds...
 echo Press Ctrl+C to stop the server
 echo.
 
-call npm run dev
+REM Optional: Open browser (comment out if causes issues)
+timeout /t 3 /nobreak
+start http://localhost:8080
 
+REM Run the development server
+npm run dev
+
+REM If npm run dev exits, show this message
+echo.
+echo ============================================
+echo Development server stopped.
+echo ============================================
+echo.
 pause
