@@ -160,10 +160,10 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="font-exo text-4xl font-bold text-center mb-12">Our Leadership Team</h2>
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="grid grid-cols-3 gap-6 max-w-7xl mx-auto">
             {/* Amit Sinha - Managing Director */}
-            <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300">
-              <div className="h-96 overflow-hidden bg-secondary">
+            <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300 flex flex-col">
+              <div className="h-64 overflow-hidden bg-secondary">
                 <img
                   src={amitSinhaImage}
                   alt="Amit Sinha - Managing Director"
@@ -174,118 +174,118 @@ const About = () => {
                 <CardTitle className="font-exo text-2xl">Amit Sinha</CardTitle>
                 <p className="text-primary font-semibold mt-2">Managing Director</p>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="flex-1 overflow-y-auto">
+                <div className="space-y-3">
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     Amit Sinha brings extensive expertise in business development, finance, and strategic marketing to INOVALE. With a proven track record of driving organizational growth and market expansion, Amit leads the company's vision to become India's premier technology solutions provider.
                   </p>
                   <div>
-                    <h4 className="font-exo font-bold text-primary mb-2">Areas of Expertise:</h4>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Business Development:</strong> Driving partnerships with educational institutions and enterprises</span>
+                    <h4 className="font-exo font-bold text-primary mb-2 text-sm">Areas of Expertise:</h4>
+                    <ul className="space-y-1 text-xs text-muted-foreground">
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>Business Development:</strong> Driving partnerships</span>
                       </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Financial Strategy:</strong> Optimizing resources and ensuring sustainable growth</span>
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>Financial Strategy:</strong> Resource optimization</span>
                       </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Strategic Marketing:</strong> Building brand presence and market positioning</span>
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>Strategic Marketing:</strong> Brand positioning</span>
                       </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Organizational Leadership:</strong> Guiding teams towards excellence and innovation</span>
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>Leadership:</strong> Team excellence</span>
                       </li>
                     </ul>
                   </div>
-                  <p className="text-sm text-muted-foreground italic pt-4 border-t border-border">
-                    "Innovation thrives when vision meets execution. Our mission is to empower the next generation through technology while driving measurable business outcomes."
+                  <p className="text-xs text-muted-foreground italic pt-2 border-t border-border">
+                    "Innovation thrives when vision meets execution."
                   </p>
                 </div>
               </CardContent>
             </Card>
 
             {/* Harsh Raj - Senior AI Architect */}
-            <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300">
+            <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300 flex flex-col">
               <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-6 h-32 flex items-center justify-center">
-                <h3 className="font-exo text-3xl font-bold text-center text-primary">Harsh Raj</h3>
+                <h3 className="font-exo text-2xl font-bold text-center text-primary">Harsh Raj</h3>
               </div>
-              <CardHeader>
-                <CardTitle className="font-exo text-2xl">Harsh Raj</CardTitle>
-                <p className="text-primary font-semibold mt-2">Senior AI Architect</p>
+              <CardHeader className="pb-2">
+                <CardTitle className="font-exo text-lg">Harsh Raj</CardTitle>
+                <p className="text-primary font-semibold mt-1 text-sm">Senior AI Architect</p>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground leading-relaxed">
-                    Harsh Raj is a visionary Senior AI Architect with deep expertise in cutting-edge AI technologies. With extensive experience in Large Language Models and Agentic AI systems, Harsh drives the technical excellence and innovation backbone of INOVALE's AI solutions. His ability to design and implement scalable, production-ready AI systems has been instrumental in delivering enterprise-grade solutions.
+              <CardContent className="flex-1 overflow-y-auto">
+                <div className="space-y-2">
+                  <p className="text-muted-foreground leading-relaxed text-xs">
+                    Visionary Senior AI Architect with deep expertise in cutting-edge AI technologies. Extensive experience in Large Language Models and Agentic AI systems.
                   </p>
                   <div>
-                    <h4 className="font-exo font-bold text-primary mb-2">Core Competencies:</h4>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Large Language Models (LLMs):</strong> Design and implementation of state-of-the-art generative AI systems</span>
+                    <h4 className="font-exo font-bold text-primary mb-1 text-xs">Core Competencies:</h4>
+                    <ul className="space-y-1 text-xs text-muted-foreground">
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>LLMs:</strong> Generative AI systems</span>
                       </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Agentic AI:</strong> Building autonomous AI agents and multi-agent systems</span>
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>Agentic AI:</strong> Autonomous agents</span>
                       </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Machine Learning Algorithms:</strong> Advanced ML model development and optimization</span>
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>ML Algorithms:</strong> Model optimization</span>
                       </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Scalable Pipelines:</strong> Designing and implementing production ML pipelines and data architectures</span>
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>Scalable Pipelines:</strong> ML architecture</span>
                       </li>
                     </ul>
                   </div>
-                  <p className="text-sm text-muted-foreground italic pt-4 border-t border-border">
-                    "The future belongs to intelligent systems. We're not just building AI; we're architecting the intelligence that will transform industries."
+                  <p className="text-xs text-muted-foreground italic pt-1 border-t border-border">
+                    "We're architecting intelligence."
                   </p>
                 </div>
               </CardContent>
             </Card>
 
             {/* Ankit Pratap Singh - Full Stack Developer */}
-            <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300">
+            <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300 flex flex-col">
               <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-6 h-32 flex items-center justify-center">
-                <h3 className="font-exo text-3xl font-bold text-center text-primary">Ankit Pratap Singh</h3>
+                <h3 className="font-exo text-2xl font-bold text-center text-primary">Ankit Pratap Singh</h3>
               </div>
-              <CardHeader>
-                <CardTitle className="font-exo text-2xl">Ankit Pratap Singh</CardTitle>
-                <p className="text-primary font-semibold mt-2">Full Stack Java Developer</p>
+              <CardHeader className="pb-2">
+                <CardTitle className="font-exo text-lg">Ankit Pratap Singh</CardTitle>
+                <p className="text-primary font-semibold mt-1 text-sm">Full Stack Java Developer</p>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground leading-relaxed">
-                    Ankit Pratap Singh is a highly skilled Full Stack Java Developer with a proven expertise in building robust, scalable enterprise applications. With deep knowledge of modern development frameworks and cloud-native architectures, Ankit ensures that INOVALE's software solutions are built on solid technical foundations, delivering reliability and performance at scale.
+              <CardContent className="flex-1 overflow-y-auto">
+                <div className="space-y-2">
+                  <p className="text-muted-foreground leading-relaxed text-xs">
+                    Highly skilled Full Stack Java Developer with expertise in building robust, scalable enterprise applications and cloud-native architectures.
                   </p>
                   <div>
-                    <h4 className="font-exo font-bold text-primary mb-2">Technical Expertise:</h4>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Java Ecosystem:</strong> Spring Boot, Microservices, RESTful APIs, and enterprise application development</span>
+                    <h4 className="font-exo font-bold text-primary mb-1 text-xs">Technical Expertise:</h4>
+                    <ul className="space-y-1 text-xs text-muted-foreground">
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>Java Ecosystem:</strong> Spring Boot, Microservices</span>
                       </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Frontend Technologies:</strong> Modern web frameworks and responsive UI development</span>
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>Frontend:</strong> Web frameworks, UI design</span>
                       </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Database Design:</strong> SQL optimization, schema design, and data persistence layers</span>
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>Database:</strong> SQL optimization, design</span>
                       </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span><strong>Cloud & DevOps:</strong> Deployment automation, containerization, and infrastructure management</span>
+                      <li className="flex items-start space-x-1">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span><strong>Cloud & DevOps:</strong> Deployment automation</span>
                       </li>
                     </ul>
                   </div>
-                  <p className="text-sm text-muted-foreground italic pt-4 border-t border-border">
-                    "Great software is built on solid foundations. We focus on writing clean, maintainable code that scales with your business needs."
+                  <p className="text-xs text-muted-foreground italic pt-1 border-t border-border">
+                    "Great software scales."
                   </p>
                 </div>
               </CardContent>
