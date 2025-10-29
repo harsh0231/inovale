@@ -163,11 +163,11 @@ const About = () => {
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Amit Sinha - Managing Director */}
             <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300">
-              <div className="h-80 overflow-hidden bg-secondary flex items-center justify-center">
+              <div className="h-96 overflow-hidden bg-secondary">
                 <img
                   src={amitSinhaImage}
                   alt="Amit Sinha - Managing Director"
-                  className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <CardHeader>
@@ -209,13 +209,8 @@ const About = () => {
 
             {/* Harsh Raj - Senior AI Architect */}
             <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300">
-              <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-8 h-32 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/30 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-3xl">🤖</span>
-                  </div>
-                  <p className="text-primary font-semibold text-sm">AI Architecture & Innovation</p>
-                </div>
+              <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-6 h-32 flex items-center justify-center">
+                <h3 className="font-exo text-3xl font-bold text-center text-primary">Harsh Raj</h3>
               </div>
               <CardHeader>
                 <CardTitle className="font-exo text-2xl">Harsh Raj</CardTitle>
@@ -256,13 +251,8 @@ const About = () => {
 
             {/* Ankit Pratap Singh - Full Stack Developer */}
             <Card className="bg-card border-border overflow-hidden hover:shadow-2xl hover:shadow-golden-glow/20 transition-all duration-300">
-              <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-8 h-32 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/30 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-3xl">⚙️</span>
-                  </div>
-                  <p className="text-primary font-semibold text-sm">Full Stack Development & Architecture</p>
-                </div>
+              <div className="bg-gradient-to-br from-primary/20 via-secondary/20 to-background p-6 h-32 flex items-center justify-center">
+                <h3 className="font-exo text-3xl font-bold text-center text-primary">Ankit Pratap Singh</h3>
               </div>
               <CardHeader>
                 <CardTitle className="font-exo text-2xl">Ankit Pratap Singh</CardTitle>
